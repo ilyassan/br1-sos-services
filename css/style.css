@@ -139,6 +139,33 @@ a:focus {
   padding: 10px 25px;
   color: #000000;
   text-align: center;
+  position: relative;
+  transition: 300ms all;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link::after,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  background-color: #0355cc;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  opacity: 0;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link::after{
+  transition: 300ms all;
+}
+
+.custom_nav-container .navbar-nav .nav-item.active .nav-link::after{
+  opacity: 1;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link::after {
+  opacity: 1;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -292,7 +319,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  padding-bottom: 90px;
+  padding-bottom: 110px;
 }
 
 .slider_section .detail-box h1 {
@@ -446,6 +473,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .professional_section {
@@ -512,6 +540,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
     background-color: white;
+  border-radius: .75rem;
 }
 
 .service_section .box .img-box {
@@ -758,17 +787,22 @@ a:focus {
   margin-top: 25px;
 }
 
+.info_section .social-box > div {
+  display: flex;
+  gap: 15px;
+}
+
 .info_section .social-box .box {
   background-color: #ffffff;
   padding: 5px 15px;
 }
 
-.info_section a {
+.info_section span {
   margin: 0 5px;
   color: #0355cc;
 }
 
-.info_section a i {
+.info_section span i {
   font-size: 18px;
 }
 
@@ -776,7 +810,7 @@ a:focus {
   color: #ff8a1d;
 }
 
-.info_items a {
+.info_items span {
   position: relative;
 }
 
@@ -819,8 +853,12 @@ a:focus {
   background-color: #0a0f43;
 }
 
-.info_items .item:hover .img-box {
+.info_items .item .img-box:hover {
   background-color: #ff8a1d;
+}
+
+.info_items .item a {
+  border-radius: 100%;
 }
 
 .info_items {
