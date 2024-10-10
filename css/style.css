@@ -401,6 +401,17 @@ a:focus {
   fill: #ffffff;
 }
 
+.feature_section:has(.box:hover:not(.active)) .box.active{
+  background-color: white;
+  color: #555089;
+}
+
+.feature_section:has(.box:hover:not(.active)) .box.active .img-box svg,
+.feature_section:has(.box:hover:not(.active)) .box.active .img-box svg path
+{
+  fill: #726dae;
+}
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -572,6 +583,11 @@ a:focus {
   color: #0355cc;
 }
 
+.btn-box a,
+.btn-box button {
+  transition: all 350ms;
+}
+
 .client_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -648,6 +664,7 @@ a:focus {
   outline: none;
   margin: 0 20px;
   color: #ffffff;
+  border-radius: 100%;
 }
 
 .heading_container {
@@ -665,6 +682,7 @@ a:focus {
   color: #ffffff;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 
 .contact_section input::-webkit-input-placeholder {
@@ -787,6 +805,7 @@ a:focus {
   line-height: 80px;
   background-color: #0355cc;
   color: #ffffff;
+  transition: 350ms all;
 }
 
 .info_items .item .img-box i {
