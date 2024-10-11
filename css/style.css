@@ -586,7 +586,8 @@ a:focus {
           filter: brightness(0) invert(1);
 }
 
-.service_section .btn-box {
+.service_section .btn-box,
+.faqs .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +597,8 @@ a:focus {
   margin-top: 45px;
 }
 
-.service_section .btn-box a {
+.service_section .btn-box a,
+.faqs .btn-box a {
   display: inline-block;
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
@@ -607,7 +609,8 @@ a:focus {
   color: #ffffff;
 }
 
-.service_section .btn-box a:hover {
+.service_section .btn-box a:hover,
+.faqs .btn-box a:hover {
   background-color: transparent;
   color: #0355cc;
 }
@@ -875,6 +878,29 @@ a:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+
+/* la page de faq */
+.faq {
+  position: relative;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  margin-bottom: 50px;
+}
+
+.faq::before {
+  content: attr(data-question);
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: -30px;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
 
 /* footer section*/
 .footer_section {
