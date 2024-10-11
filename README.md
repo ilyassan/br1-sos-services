@@ -25,7 +25,7 @@ L'objectif principal est de transformer le site web de **SOS-Services** en un en
 - Ajouter un menu de navigation sur chaque page pour faciliter la navigation.
 - Remplacer le texte **SOS-SERVICES** par un logo au format image dans le menu.
 
-## Technologies employées
+## Technologies utilisées
 
 - HTML5
 - CSS3
